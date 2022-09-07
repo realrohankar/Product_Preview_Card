@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@100;200;500;700&display=swap');
+
+/*font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif; */
+
+*{
+    padding:0;
+    margin: 0;
+}
+
+:root {
+
+    /* Primary */
+
+    --dark_Cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+
+    /* Secondary */
+
+    --very_Dark_Blue: hsl(212, 21%, 14%);
+    --dark_Grayish_Blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+
+}
+
+body{
+    background-color: var(--cream);
+    /*font-family: 'Fraunces', serif; */
+font-family: 'Montserrat', sans-serif;
+}
+
+
+.product_Card{
+    width: 575px;
+    background-color:var(--white);
+    display: flex;
+    margin: 50px auto;
+    border-radius: 12px;
+
+    overflow: hidden;
+}
+img{
+    max-width: 50%;
+    width: auto;
+    height:auto;
+    object-fit: cover;
+ }
+
+.infos{
+    display:flex ;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px;
+    max-width: 50%;
+    margin-left: 13px;
+    
+}
+
+p{
+    font-size: 14px;
+    font-weight: 500 ;
+    color: var(--dark_Grayish_Blue);
+    margin-top: 20px;
+    padding: 5px;
+    line-height: 20px;
+
+}
+
+h1{
+   font-family: 'Fraunces', serif; 
+   margin-top: 20px;
+   padding: 5px;
+}
+
+.big_Price{
+    color: var(--dark_Cyan);
+}
+
+span{
+    color: var(--dark_Grayish_Blue);
+    font-weight: 500;
+    font-size: small;
+}
+
+.prices{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.cart{
+    margin-right: 8px;
+}
+
+s{
+    margin-top: 35px;
+    margin-right: 10px;
+    color: var(--dark_Grayish_Blue);
+}
+.btn{
+    background-color: var(--dark_Cyan);
+    padding: 15px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor:pointer;
+    transition: all 0.2s ease 0s;
+
+}
+
+.btn:hover{
+    background-color: var(--dark_Cyan);
+    box-shadow: 0px 5px 20px var(--dark_Cyan);
+    transform: translateY(-7px);
+}
+
